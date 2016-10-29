@@ -1,15 +1,25 @@
 #include <iostream>
 #include<fstream>
 #include<cstdio>
+#include<string.h>
 
 using namespace std;
 
-int main()
-{
+int main() {
     ifstream input("testReading.txt");
     string line;
     while(getline( input, line ) ) {
-         cout<<line<<'\n';
+         int n = line.length();
+         string word = "";
+         for(char & c : line) {
+            if (c == ' ') {
+                cout<<word<<'\n';
+                word.clear();
+            } else {
+                word +=c;
+            }
+         }
+        cout<<n<<'\n';
     }
     return 0;
 }
