@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1477756866 source:/home/laura/Part II Project/partIIProject/main.cpp
+	<iostream>
+	<fstream>
+	<cstdio>
+
