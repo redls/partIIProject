@@ -1,7 +1,19 @@
 # depslib dependency file v1.0
-1477774463 source:/home/laura/Part II Project/partIIProject/main.cpp
+1477871656 source:/home/laura/Part II Project/partIIProject/main.cpp
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
+	"dictionary.h"
+
+1477871500 source:/home/laura/Part II Project/partIIProject/Dictionary.cpp
+	"dictionary.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+
+1477871255 /home/laura/Part II Project/partIIProject/dictionary.h
+	<unordered_map>
+	<cstdio>
 
