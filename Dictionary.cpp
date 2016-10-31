@@ -24,6 +24,6 @@ Dictionary::Dictionary() {
                 else number = number*10 + c -'0';
             }
          }
-         cout<<word<<'/'<<number<<'\n';
+         mymap.insert(make_pair(word, number));
     }
 }
