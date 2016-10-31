@@ -4,9 +4,10 @@
 using namespace std;
 class Dictionary {
     private:
-    unordered_map<string, long> mymap;
+    unordered_map<string, long> dictionary;
 
     public:
     Dictionary();
+    long retrievePhraseIndex(string phrase);
 
 };

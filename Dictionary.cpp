@@ -13,7 +13,6 @@ Dictionary::Dictionary() {
     string word = "";
     while(getline( input, line ) ) {
          is_number = false;
-         int n = line.length();
          word.clear();
          for(char & c : line) {
             if (c == '|') {
@@ -24,6 +23,15 @@ Dictionary::Dictionary() {
                 else number = number*10 + c -'0';
             }
          }
-         mymap.insert(make_pair(word, number));
+         dictionary.insert(make_pair(word, number));
     }
+}
+
+long Dictionary::retrievePhraseIndex(string phrase) {
+    unordered_map<string, long>::const_iterator found_iter = dictionary.find(phrase);
+    if (found_iter == dictionary.end()) {
+        cout<<'The given phrase: '<<phrase<<' was not found in the dictionary'<<endl;
+        return -1;
+        }
+    return found_iter->second;
 }
