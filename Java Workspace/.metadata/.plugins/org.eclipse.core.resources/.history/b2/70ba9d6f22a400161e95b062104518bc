@@ -1,0 +1,7 @@
+//import home.laura.stanford-english-corenlp-2016-10-31-models;
+public class StartPoint {
+
+	public static void main(String[] args) {
+		
+	}
+}

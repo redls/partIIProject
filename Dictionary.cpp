@@ -9,7 +9,7 @@ Dictionary::Dictionary() {
     ifstream input("testDictionary.txt");
     string line;
     bool is_number = false;
-    long number = 0;
+    long long number = 0;
     string word = "";
     while(getline( input, line ) ) {
          is_number = false;
@@ -27,10 +27,10 @@ Dictionary::Dictionary() {
     }
 }
 
-long Dictionary::retrievePhraseIndex(string phrase) {
-    unordered_map<string, long>::const_iterator found_iter = dictionary.find(phrase);
+long long Dictionary::retrievePhraseIndex(string phrase) {
+    unordered_map<string, long long>::const_iterator found_iter = dictionary.find(phrase);
     if (found_iter == dictionary.end()) {
-        cout<<'The given phrase: '<<phrase<<' was not found in the dictionary'<<endl;
+        cout<<"The given phrase: "<<phrase<<"was not found in the dictionary"<<endl;
         return -1;
         }
     return found_iter->second;

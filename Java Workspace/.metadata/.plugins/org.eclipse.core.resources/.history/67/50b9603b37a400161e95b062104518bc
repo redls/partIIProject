@@ -1,0 +1,17 @@
+//import home.laura.stanford-english-corenlp-2016-10-31-models;
+import java.io.StringReader;
+import java.util.List;
+
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.process.*;
+public class StartPoint {
+
+	public static void main(String[] args) {
+		 String sent2 = "This is another sentence...";
+		 TokenizerFactory<CoreLabel> tokenizerFactory =
+				    PTBTokenizer.factory(new CoreLabelTokenFactory(), "");
+	     List<CoreLabel> rawWords2 =
+				    tokenizerFactory.getTokenizer(new StringReader(sent2)).tokenize();
+		 System.out.println(rawWords2);		
+	}
+}

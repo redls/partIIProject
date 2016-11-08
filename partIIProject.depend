@@ -1,19 +1,80 @@
 # depslib dependency file v1.0
-1477871656 source:/home/laura/Part II Project/partIIProject/main.cpp
+1478439561 source:/home/laura/Part II Project/partIIProject/main.cpp
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
 	"dictionary.h"
+	"dataset_sentences.h"
+	"io/tokenscanner.h"
 
-1477871500 source:/home/laura/Part II Project/partIIProject/Dictionary.cpp
+1478164949 source:/home/laura/Part II Project/partIIProject/Dictionary.cpp
 	"dictionary.h"
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
 
-1477927412 /home/laura/Part II Project/partIIProject/dictionary.h
+1478164964 /home/laura/Part II Project/partIIProject/dictionary.h
 	<unordered_map>
 	<cstdio>
+
+1478185419 source:/home/laura/Part II Project/partIIProject/DatasetSentences.cpp
+	"dataset_sentences.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+
+1478164955 /home/laura/Part II Project/partIIProject/dataset_sentences.h
+	<unordered_map>
+	<cstdio>
+
+1478400992 /home/laura/Part II Project/partIIProject/io/tokenscanner.h
+	<iostream>
+	<string>
+	"private/tokenpatch.h"
+	"private/init.h"
+
+1477216010 /home/laura/StanfordLibraries/StanfordCPPLib/private/tokenpatch.h
+
+1477216010 /home/laura/StanfordLibraries/StanfordCPPLib/private/init.h
+	<cstdlib>
+	<stdio.h>
+
+1477216010 /home/laura/Part II Project/partIIProject/StanfordCPPLib/private/tokenpatch.h
+
+1477216010 /home/laura/Part II Project/partIIProject/StanfordCPPLib/private/init.h
+	<cstdlib>
+	<stdio.h>
+
+1478185419 source:/home/laura/Project/partIIProject/DatasetSentences.cpp
+	"dataset_sentences.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+
+1478164955 /home/laura/Project/partIIProject/dataset_sentences.h
+	<unordered_map>
+	<cstdio>
+
+1478164949 source:/home/laura/Project/partIIProject/Dictionary.cpp
+	"dictionary.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+
+1478164964 /home/laura/Project/partIIProject/dictionary.h
+	<unordered_map>
+	<cstdio>
+
+1478483888 source:/home/laura/Project/partIIProject/main.cpp
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+	"dictionary.h"
+	"dataset_sentences.h"
 

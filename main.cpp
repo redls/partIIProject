@@ -3,13 +3,15 @@
 #include<cstdio>
 #include<string.h>
 #include "dictionary.h"
+#include "dataset_sentences.h"
 
 using namespace std;
 
 int main() {
     ifstream input("testReading.txt");
     string line;
-    Dictionary *x = new Dictionary();
+    DatasetSentences *x = new DatasetSentences();
+
     while(getline( input, line ) ) {
          int n = line.length();
          string word = "";
