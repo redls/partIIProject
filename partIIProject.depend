@@ -48,33 +48,51 @@
 	<cstdlib>
 	<stdio.h>
 
-1478185419 source:/home/laura/Project/partIIProject/DatasetSentences.cpp
+1478647753 source:/home/laura/Project/partIIProject/DatasetSentences.cpp
 	"dataset_sentences.h"
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
 
-1478164955 /home/laura/Project/partIIProject/dataset_sentences.h
+1478647718 /home/laura/Project/partIIProject/dataset_sentences.h
 	<unordered_map>
 	<cstdio>
 
-1478164949 source:/home/laura/Project/partIIProject/Dictionary.cpp
+1478640598 source:/home/laura/Project/partIIProject/Dictionary.cpp
 	"dictionary.h"
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
 
-1478164964 /home/laura/Project/partIIProject/dictionary.h
+1478641575 /home/laura/Project/partIIProject/dictionary.h
 	<unordered_map>
 	<cstdio>
 
-1478483888 source:/home/laura/Project/partIIProject/main.cpp
+1478644256 source:/home/laura/Project/partIIProject/main.cpp
 	<iostream>
 	<fstream>
 	<cstdio>
 	<string.h>
 	"dictionary.h"
 	"dataset_sentences.h"
+	"sentiment_labels.h"
+
+1478643827 source:/home/laura/Project/partIIProject/NegativeWords.cpp
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
+
+1478645006 /home/laura/Project/partIIProject/sentiment_labels.h
+	<unordered_map>
+	<cstdio>
+
+1478645014 source:/home/laura/Project/partIIProject/SentimentLabels.cpp
+	"sentiment_labels.h"
+	<iostream>
+	<fstream>
+	<cstdio>
+	<string.h>
 

@@ -5,12 +5,19 @@
 #include<string.h>
 using namespace std;
 
+/*
+ * Map which keeps the reads from the "DatasetSentences.txt"stores sentences and their index.
+ */
+
+
 DatasetSentences::DatasetSentences() {
+    // Read from the file.
     ifstream input("testDictionary.txt");
     string line;
     bool is_number = false;
     long long number = 0;
     string word = "";
+    bool firstLine = false;
     while(getline( input, line ) ) {
          is_number = true;
          number = 0;
@@ -37,3 +44,13 @@ long long DatasetSentences::retrieveSentenceIndex(string phrase) {
         }
     return found_iter->second;
 }
+
+unordered_map<string, long long> DatasetSentences::getSentencesMap() {
+    return sentences;
+}
+
+/*long long DatasetSentences::numberOfPositiveSentences() {
+    for (auto sentence: sentences.begin(); sentence != sentences.end(); sentence++) {
+
+    }
+}*/
