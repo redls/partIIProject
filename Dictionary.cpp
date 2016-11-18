@@ -6,7 +6,7 @@
 using namespace std;
 
 Dictionary::Dictionary() {
-    ifstream input("testDictionary.txt");
+    ifstream input("stanfordSentimentTreebank/dictionary.txt");
     string line;
     bool is_number = false;
     long long number = 0;
@@ -30,7 +30,9 @@ Dictionary::Dictionary() {
 long long Dictionary::getPhraseIndex(string phrase) {
     unordered_map<string, long long>::const_iterator found_iter = dictionary.find(phrase);
     if (found_iter == dictionary.end()) {
-        cout<<"The given phrase: "<<phrase<<"was not found in the dictionary"<<endl;
+        ofstream outputFile("debug.txt");
+        outputFile<<"The given phrase: "<<phrase<<" was not found in the dictionary."<<endl;
+        outputFile.close();
         return -1;
         }
     return found_iter->second;

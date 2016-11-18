@@ -6,8 +6,12 @@
 
 using namespace std;
 
+/*
+ * Maps phrase indexes with their sentiment score.
+ */
+
 SentimentLabels::SentimentLabels() {
-    ifstream input("testSentimentLabels.txt");
+    ifstream input("stanfordSentimentTreebank/sentiment_labels.txt");
     string line;
     bool character = false;
     bool first_line = true;
@@ -32,7 +36,6 @@ SentimentLabels::SentimentLabels() {
             }
             second_number = atof(word.c_str());
             sentimentLabelsMap.insert(make_pair(first_number, second_number));
-            cout<<first_number<<" "<<second_number<<endl;
          }
          first_line = false;
     }

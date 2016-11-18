@@ -3,6 +3,13 @@
 
 using namespace std;
 
+/*
+ * Map which keeps the reads from the "DatasetSentences.txt" stores only the sentences used for training
+ * and their index.  One can find which senteces are used for testing by looking in datasetSplit.txt and
+ * retrieve the sentences annotated with 1.
+ */
+
+
 class DatasetSentences {
     private:
     unordered_map<string, long long> sentences;
@@ -17,11 +24,4 @@ class DatasetSentences {
 
     // Retrieve map.
     unordered_map<string, long long> getSentencesMap();
-
-    // Return the number of positive sentences in the  dataset.
-    //long long numberofPositiveSentences();
-
-    // Return the number of negative sentences in the  dataset.
-  //  long long numberofNegativeSentences();
-
 };
