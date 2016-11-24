@@ -15,7 +15,7 @@ DatasetSentences::DatasetSentences() {
     // Read from the file.
     ifstream input("stanfordSentimentTreebank/datasetSentences.txt");
     ifstream input_datasplit("stanfordSentimentTreebank/datasetSplit.txt");
-    ofstream outputFile("dataSet.txt");
+    ofstream outputFile("debug.txt", ios::out|ios::app);
     string line;
     string line_dataset;
     bool is_number = false;
@@ -58,7 +58,7 @@ DatasetSentences::DatasetSentences() {
 long long DatasetSentences::retrieveSentenceIndex(string phrase) {
     unordered_map<string, long long>::const_iterator found_iter = sentences.find(phrase);
     if (found_iter == sentences.end()) {
-        ofstream outputFile("debug.txt");
+        ofstream outputFile("debug.txt", ios_base::app);
         outputFile<<"The given phrase: "<<phrase<<" was not found in the sentence dataset."<<endl;
         return -1;
         }

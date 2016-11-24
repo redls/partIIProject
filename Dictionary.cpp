@@ -30,9 +30,9 @@ Dictionary::Dictionary() {
 long long Dictionary::getPhraseIndex(string phrase) {
     unordered_map<string, long long>::const_iterator found_iter = dictionary.find(phrase);
     if (found_iter == dictionary.end()) {
-        ofstream outputFile("debug.txt");
+        ofstream outputFile("debug.txt", ios::out|ios::app);
         outputFile<<"The given phrase: "<<phrase<<" was not found in the dictionary."<<endl;
-        outputFile.close();
+        //outputFile.close();
         return -1;
         }
     return found_iter->second;
